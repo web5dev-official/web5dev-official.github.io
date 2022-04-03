@@ -18,7 +18,8 @@ body{
 #ff_screenshots{
     margin-left: auto;
     margin-right: auto;
-    height: auto;
-    width: auto;
+    height: 60%;
+    width: 80%;
     padding-top: 10%;
+    display: block;
 }
