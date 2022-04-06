@@ -1,1 +1,14 @@
-body{background-color: brown;}
+*{background-color: brown;}
+h1{
+    background-color: rgb(100, 100, 231);
+    color: aliceblue;
+    padding-left: 395px;
+    /* cod is used to design web page*/
+    border: 3px solid white;
+}
+h1:hover{
+    background-color: burlywood;
+
+    border-color: gray;
+
+}
