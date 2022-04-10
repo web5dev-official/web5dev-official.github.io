@@ -1,14 +1,47 @@
-*{background-color: #91e081;}
-h1{
+* {
+    background-color: #00000000
+}
+
+h1 {
     background-color: rgb(236, 157, 112);
     color: aliceblue;
-    padding-left: 33%;
+    /* padding-left: 33%; */
     /* cod is used to design web page*/
+    text-align: center;
     border: 3px solid white;
 }
-h1:hover{
+
+h1:hover {
     background-color: burlywood;
 
     border-color: gray;
 
 }
+
+.buttons {
+    display: flex;
+    /* border: 2px solid black; */
+    /* background-color: rgb(255 185 185); */
+    justify-content: center;
+}
+
+.sbutton {
+    /* subtton is used to define the properties of button */
+    background-color: rgb(185 255 221);
+    margin: 2%;
+    border: 2px white solid;
+    padding: 2% 2%;
+    
+
+}
+#video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
