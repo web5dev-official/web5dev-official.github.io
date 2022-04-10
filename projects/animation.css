@@ -1,0 +1,72 @@
+body{
+    background-color: aquamarine;
+    /* align-content: center; */
+    border: 6px solid black;
+    margin: 2%;
+    height: 100vh;
+    animation-name: freefund;
+    animation-duration: 20S;
+}
+#heading{
+    border: 6px #a090ef solid;
+    text-align: center;
+    width: 94%;
+    color: white;
+    background-color: #ffcc00;
+    animation-name: zeromoon;
+    animation-duration: 4S;
+}
+#logo{
+    width: 10%;
+    height: 5%;
+    animation-name: resize;
+    animation-duration: 2s;
+
+}
+#header
+{
+    align-items: center;
+    display: flex;
+    /* border: 2px solid grey; */
+    align-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+    
+}
+@keyframes zeromoon
+{
+    0%{ text-align: left;
+    color: blue;}
+    50%{ text-align: right;
+    color: black;}
+    100%{ text-align: center;
+    color: chocolate;}
+
+}
+@keyframes freefund
+{
+    0%{background-color: #a090ef;}
+    10%{background-color: #ef90e7;}
+    20%{background-color: #42f852;}
+    30%{background-color: #efc990;}
+    40%{background-color: #ef9090;}
+    50%{background-color: #eed600;}
+    60%{background-color: #19ddcd;}
+    70%{background-color: #750202;}
+    80%{background-color: #0025c9;}
+    90%{background-color: #050203;}
+    100%{background-color: #ad9110;}
+}
+@keyframes resize
+{
+    0%{position: relative;
+    left: 20px;}
+    25%{position: relative;
+    left: 400px;}
+    50%{position: relative;
+    left: 60px;}
+    100%{position: relative;
+    left: 80px;}
+}
