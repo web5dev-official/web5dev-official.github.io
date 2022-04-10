@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="/media/ibc.ico">
-   
+
     <link rel="stylesheet" href="/css folder/ibc.css">
     <title>IBC WEB PAGE</title>
 </head>
+
 <body>
-   <h1>website under devlopment</h1>
-   <video src="/video/Humsafar Full Video   Varun  Alia Bhatt  Akhil Sachdeva  Badrinath Ki Dulhania_480p.mp4" autoplay muted loop id="video"></video>
-   <div class="buttons">
-   <a href="/testnet.html" target="_blank" id="testnet" class="sbutton"> check testnet website</a> <br>
-   <a href="/raftaar_ff.html" target="_blank" id="raftaar" class="sbutton">check personal website</a><br>
-   <a href="/projects/project.html" class="sbutton">projects</a>
-   <a href="/vikash.html" id="vikash" class="sbutton">vikash personal website</a>
-   </div>
+    <h1>website under devlopment</h1>
+    <video src="/video/Humsafar Full Video   Varun  Alia Bhatt  Akhil Sachdeva  Badrinath Ki Dulhania_480p.mp4" autoplay
+         loop id="video"></video>
+    <div class="buttons">
+        <a href="/testnet.html" target="_blank" id="testnet" class="sbutton"> check testnet website</a> <br>
+        <a href="/raftaar_ff.html" target="_blank" id="raftaar" class="sbutton">check personal website</a><br>
+        <a href="/projects/project.html" class="sbutton">projects</a>
+        <a href="/vikash.html" id="vikash" class="sbutton">vikash personal website</a>
+    </div>
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+    <!-- script used for button -->
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
 </body>
+
 </html>
