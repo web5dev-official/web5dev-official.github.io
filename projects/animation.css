@@ -4,8 +4,9 @@ body{
     border: 6px solid black;
     margin: 2%;
     height: 100vh;
-    animation-name: freefund;
-    animation-duration: 20S;
+    /* animation-name: freefund;
+    animation-duration: 20S; */
+    animation: freefund 20s linear infinite;
 }
 #heading{
     border: 6px #a090ef solid;
