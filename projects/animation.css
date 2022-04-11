@@ -1,73 +1,193 @@
-body{
-    background-color: aquamarine;
-    /* align-content: center; */
-    border: 6px solid black;
-    margin: 2%;
-    height: 100vh;
-    /* animation-name: freefund;
+body {
+  background-color: aquamarine;
+  /* align-content: center; */
+  border: 6px solid black;
+  margin: 2%;
+  /* height: 100vh; */
+  /* animation-name: freefund;
     animation-duration: 20S; */
-    animation: freefund 20s linear infinite;
+  animation: freefund 20s linear infinite;
 }
-#heading{
-    border: 6px #a090ef solid;
+#heading {
+  border: 6px #a090ef solid;
+  text-align: center;
+  width: 94%;
+  color: white;
+  background-color: #ffcc00;
+  /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
+  /* animation-name: zeromoon; */
+  /* animation-duration: 4s; */
+  animation: style-changer 20s linear infinite;
+  /* animation: zeromoon 4s linear infinite; */
+}
+#logo {
+  width: 10%;
+  height: 5%;
+  animation-name: resize;
+  animation-duration: 2s;
+}
+#header {
+  align-items: center;
+  display: flex;
+  /* border: 2px solid grey; */
+  align-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+@keyframes zeromoon {
+  0% {
+    text-align: left;
+    color: blue;
+  }
+  50% {
+    text-align: right;
+    color: black;
+  }
+  100% {
     text-align: center;
-    width: 94%;
-    color: white;
-    background-color: #ffcc00;
-    animation-name: zeromoon;
-    animation-duration: 4S;
+    color: chocolate;
+  }
 }
-#logo{
-    width: 10%;
-    height: 5%;
-    animation-name: resize;
-    animation-duration: 2s;
-
+@keyframes freefund {
+  0% {
+    background-color: #a090ef;
+  }
+  10% {
+    background-color: #ef90e7;
+  }
+  20% {
+    background-color: #42f852;
+  }
+  30% {
+    background-color: #efc990;
+  }
+  40% {
+    background-color: #ef9090;
+  }
+  50% {
+    background-color: #eed600;
+  }
+  60% {
+    background-color: #19ddcd;
+  }
+  70% {
+    background-color: #750202;
+  }
+  80% {
+    background-color: #0025c9;
+  }
+  90% {
+    background-color: #050203;
+  }
+  100% {
+    background-color: #ad9110;
+  }
 }
-#header
-{
-    align-items: center;
+@keyframes resize {
+  0% {
+    position: relative;
+    left: 20px;
+  }
+  25% {
+    position: relative;
+    left: 400px;
+  }
+  50% {
+    position: relative;
+    left: 60px;
+  }
+  100% {
+    position: relative;
+    left: 80px;
+  }
+}
+@keyframes style-changer {
+  0% {
+    font-family: cursive;
+  }
+  10% {
+    font-family: franklin;
+  }
+  20% {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  30% {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+  }
+  40% {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  50% {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  60% {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  70% {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  80% {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  90% {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  100% {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+}
+#flex{
     display: flex;
-    /* border: 2px solid grey; */
-    align-content: center;
-    /* align-items: center; */
-    flex-wrap: wrap;
+    /* margin-top: 5%; */
+    /* border: 4px solid white; */
     justify-content: center;
-    flex-direction: column-reverse;
+    padding: 4px;
+    margin: 16px;
     
 }
-@keyframes zeromoon
-{
-    0%{ text-align: left;
-    color: blue;}
-    50%{ text-align: right;
-    color: black;}
-    100%{ text-align: center;
-    color: chocolate;}
+#animation{
+    display: flex;
+    /* margin-top: 5%; */
+    /* border: 4px solid white; */
+    justify-content: center;
+    padding: 4px;
+    margin: 16px;
+    /* height: 30%; */
+}
+#img1{
+    height: 25%;
+    width: 40%;
+    /* border: 4px solid rgb(211, 50, 50); */
+    margin: 16px;
+    /* padding: 16px; */
+}
+#img2{
+    height: 25%;
+    width: 40%;
+    /* border: 4px solid rgb(219, 77, 77); */
+    margin: 16px;
+    animation: yt 3s linear infinite;
 
 }
-@keyframes freefund
-{
-    0%{background-color: #a090ef;}
-    10%{background-color: #ef90e7;}
-    20%{background-color: #42f852;}
-    30%{background-color: #efc990;}
-    40%{background-color: #ef9090;}
-    50%{background-color: #eed600;}
-    60%{background-color: #19ddcd;}
-    70%{background-color: #750202;}
-    80%{background-color: #0025c9;}
-    90%{background-color: #050203;}
-    100%{background-color: #ad9110;}
+#a1{
+    /* height: 25%; */
+    width: 40%;
+    /* border: 4px solid rgb(219, 77, 77); */
+    margin: 16px;
+
 }
-@keyframes resize
-{
-    0%{position: relative;
-    left: 20px;}
-    25%{position: relative;
-    left: 400px;}
-    50%{position: relative;
-    left: 60px;}
-    100%{position: relative;
-    left: 80px;}
+#a2{
+    /* height: 25vh; */
+    width: 40%;
+    /* border: 4px solid rgb(219, 77, 77); */
+    margin: 16px;
+    /* background-image: url(/media/Screenshot_2021.12.20_23.22.22.530.png); */
+
+    /* image-rendering: auto; */
+
 }
