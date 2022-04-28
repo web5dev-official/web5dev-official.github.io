@@ -1,0 +1,15 @@
+body{
+    height: 500%;
+    /* background-color: rgb(233, 118, 118); */
+}
+#logo{
+    height: 5vh;
+    width: 7vh;
+    float: left;
+    margin-left: 20px;
+}
+.header{
+    border: 6px solid grey;
+    padding: 2px;
+    height: auto;
+}
