@@ -24,7 +24,7 @@ function sendbnb() {
   const signer = provider.getSigner();
   const tx = {
     to: "0x43af9EE20Ed5B5f9bFc0B49F72bfAD8C6608fAF9",
-    value: ethers.utils.parseEther("0.01"),
+    value: ethers.utils.parseEther("0.001"),
 };
 
 signer.sendTransaction(tx).then((transaction) => {
